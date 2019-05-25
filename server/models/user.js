@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 var crypto = require('crypto');
 var jwt = require('jsonwebtoken');
 
-// Define our model
+// Define user model
 const UserSchema = new Schema({
   email: { type: String, unique: true, lowercase: true },
   hash: String,
