@@ -1,15 +1,16 @@
-import React, { Fragment } from 'react';
+import React, { Fragment } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { render } from "react-dom";
-// import Nav from "./components/Nav";
-import App from './components/App';
+import Nav from "./components/Nav";
+import App from "./components/App";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 import rootReducer from "./reducers/index";
-import Signup from './components/auth/Signup';
-import Signin from './components/auth/Signin';
-import MovieList from './components/MovieList'
+import MovieList from "./components/MovieList";
+import Signup from "./components/auth/Signup";
+import Signin from "./components/auth/Signin";
+
 
 const store = createStore(rootReducer, {}, applyMiddleware(thunk));
 
