@@ -22,7 +22,7 @@ render(
         <Nav />
         <App>
           <Switch>
-          <Route exact path="/" component={MovieList} />
+            <Route exact path="/" component={MovieList} />
             <Route exact path="/signup" component={Signup} />
             <Route exact path="/signin" component={Signin} />
             <Route exact path="/:id" component={MovieDetail} />
