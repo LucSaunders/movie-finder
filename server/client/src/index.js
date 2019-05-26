@@ -9,6 +9,7 @@ import thunk from "redux-thunk";
 import rootReducer from "./reducers/index";
 import Signup from './components/auth/Signup';
 import Signin from './components/auth/Signin';
+import MovieList from './components/MovieList'
 
 const store = createStore(rootReducer, {}, applyMiddleware(thunk));
 
@@ -19,6 +20,7 @@ render(
         <Nav />
         <App>
           <Switch>
+          <Route exact path="/" component={MovieList} />
             <Route exact path="/signup" component={Signup} />
             <Route exact path="/signin" component={Signin} />
           </Switch>
