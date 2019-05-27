@@ -1,3 +1,4 @@
+import "./App.css";
 import React, { Fragment } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { render } from "react-dom";
@@ -11,7 +12,6 @@ import MovieList from "./components/MovieList";
 import MovieDetail from "./components/MovieDetail";
 import Signup from "./components/auth/Signup";
 import Signin from "./components/auth/Signin";
-
 
 const store = createStore(rootReducer, {}, applyMiddleware(thunk));
 
